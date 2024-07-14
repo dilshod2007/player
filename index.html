@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="bg-gray-300">
+   <div class="container max-w-[1000px] mx-auto  flex justify-center items-center h-screen">
+    <form id="Form" class="flex flex-col max-w-[500px] flex-1 gap-[10px] bg-white p-[20px] rounded-md  " >
+       <h2>Add new players</h2>
+        <input class="indent-2 border-2 border-gray-300 rounded-md  h-[35px] text-gray-400" type="text" placeholder="Enter your name" id="playerName">
+             <input class="indent-2 border-2 border-gray-300 rounded-md h-[35px] text-gray-400"  type="text" placeholder="Enter your city" id="playerCity">
+         <input class=" indent-2 border-2 border-gray-300 rounded-md h-[35px] text-gray-400" type="url" id="playerUrl" placeholder="Enter player image URL">
+         <select  class="indent-2 border-2 border-gray-300 rounded-md h-[35px] text-gray-400" id="playersCategory">
+           <option   disabled selected> select players category</option>
+           <option value="Real Madrid">Real Madrid</option>
+           <option value="Barselona">Barselona</option>
+           <option value="Liverpool">Liverpool</option>
+           <option value="Manchestir United">Manchestir United</option>
+         </select>
+         <button class="bg-green-600 text-white py-[10px] rounded-md" id="addBtn" type="submit">Submit</button>
+       </form>
+       <div id="playersList">
+
+       </div>
+   </div>
+   <script  src="./app.js"></script>
+</body>
+</html>
